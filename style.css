@@ -418,8 +418,6 @@ body {
   cursor: pointer;
 }
 
-/* SCREEN 4: Virtual Classroom Section */
-
 .virtual-classroom-section {
   display: flex;
   flex-wrap: wrap;
@@ -488,47 +486,52 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  min-width: 350px;
 }
 
-.media-frame {
+.media-frame-bg {
   position: relative;
   width: 100%;
-  overflow: hidden;
-}
-.media-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
-  z-index: 1;
+  max-width: 420px;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  background-image: url('assets/classroom.png');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
 .blue-curve {
   position: absolute;
-  top: 43px;
-  left: 492px;
-  z-index: 0;
+  z-index: -1;
+  width: 20%;
+  top: -13px;
+  left: -14px;
 }
 
 .orange-curve {
   position: absolute;
-  bottom: 31px;
-  right: 50px;
-  z-index: 0;
+  z-index: -1;
+  width: 34%;
+  bottom: -15px;
+  right: -16px;
 }
 
 .media-play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
-  color: white;
-  background: rgba(0, 0, 0, 0.4);
+ position: absolute;
+  top: 41%;
+  left: 45%;
+  font-size: 1.2rem;
+  color: rgb(0, 225, 255);
+  background: white;
   border: none;
   border-radius: 50%;
-  padding: 0.5em 0.7em;
-  z-index: 2;
+  padding: 8px 12px;
+  z-index: 3;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -536,7 +539,6 @@ body {
 .media-play-button:hover {
   background: rgba(0, 0, 0, 0.6);
 }
-
 
 .feature-highlight {
   text-align: center;
@@ -550,6 +552,55 @@ body {
   margin-bottom: 10px;
 }
 
+.feature-title-blue {
+  color: #2f2f6f;
+}
+
+.feature-title-orange {
+  color: #f9b233;
+}
+
+.feature-subtext {
+  font-size: 1rem;
+  color: #777;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.feature-title-blue {
+  color: #2f2f6f;
+}
+
+.feature-title-orange {
+  color: #f9b233;
+}
+
+.feature-subtext {
+  font-size: 1rem;
+  color: #777;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feature-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.feature-title-blue {
+  color: #2f2f6f;
+}
+
+.feature-title-orange {
+  color: #f9b233;
+}
+
+.feature-subtext {
+  font-size: 1rem;
+  color: #777;
+  max-width: 600px;
+  margin: 0 auto;
+}
 .feature-title-blue {
   color: #2f2f6f;
 }
