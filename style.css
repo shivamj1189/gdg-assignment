@@ -559,7 +559,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 141px;
-  padding: 60px 0px;
+  padding: 60px 20px;
   max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -728,8 +728,8 @@ body {
 /* --- Assessment Container (holds left and right) --- */
 .assessment-container {
   display: flex;
-  align-items: flex-start; /* align to top like screen 5 */
-  justify-content: space-between; /* space between left/right */
+  align-items: flex-start; 
+  justify-content: space-between; 
   gap: 60px;
   flex-wrap: wrap;
   max-width: 1200px;
@@ -798,10 +798,12 @@ body {
 }
 
 .dot.green {
-  bottom: 20px;
-  left: -8px;
+  width: 10px;
+  bottom: -28px;
+  left: 0px;
   background-color: #2ad19d;
-   z-index: -1;
+  z-index: 0;
+  height: 10px;
 }
 
 .dot.pink {
@@ -830,7 +832,7 @@ body {
 .italy img {
   position: absolute;
   top: 165px;
-  left: 60px;
+  left: 28px;
   width: 402px;
   height: auto;
   z-index: 1;
@@ -838,7 +840,7 @@ body {
 .question-success img {
   position: absolute;
   bottom: -75px;
-  right: -160px;
+  right: -155px;
   width: 379px;
   height: auto;
   z-index: 2;
@@ -850,6 +852,7 @@ body {
   width: 400px;
   flex: 0 0 400px; /* fixed width, no grow/shrink */
   margin-left: 0;
+  padding: 133px 0px;
 }
 
 .assessment-info h2 {
