@@ -557,7 +557,7 @@ body {
   }
 
   .media-frame-bg {
-    max-width: 100%;
+    max-width: 90%;
     aspect-ratio: 16 / 9;
   }
 
@@ -766,6 +766,7 @@ body {
 /* SCREEN7 */
 .assessment-section {
   padding: 60px 20px 0px 20px;
+  overflow: hidden;
 }
 .assessment-container {
   display: flex;
@@ -925,7 +926,7 @@ body {
   }
 
   .question-card {
-    width: 100%;
+    width: 90%;
     max-width: 320px;
     height: auto;
     flex: none;
@@ -966,11 +967,15 @@ body {
     position: relative;
   }
 
-  .icon-correct img,
-  .icon-wrong img {
+  .icon-correct img{
     width: 60px;
     top: -10px;
     right: -10px;
+  }
+   .icon-wrong img{
+    width: 60px;
+    top: -30px;
+    right: 9px;
   }
 }
 
@@ -1006,7 +1011,7 @@ body {
 }
 
 .gradebook-ui {
-  padding: 20px 30px;
+  padding: 20px 30px 20px 0px;
   width: 380px;
   position: relative;
   overflow: hidden;
